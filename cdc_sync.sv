@@ -4,7 +4,7 @@
    Description  : CDC Synchronizer synchronizes 1-bit signal from source clock domain safely to destination clock domain.               
 
    Developer    : Mitu Raj, chip@chipmunklogic.com at Chipmunk Logic ™, https://chipmunklogic.com
-   Notes        : -
+   Notes        : Attribute ASYNC_REG used to PAR the flops together in Xilinx FPGAs.
    License      : Open-source.
    Date         : Aug-17-2022
 ===============================================================================================================================*/

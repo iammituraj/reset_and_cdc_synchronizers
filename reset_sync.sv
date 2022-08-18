@@ -4,7 +4,7 @@
    Description  : Reset Synchronizer synchronizes the de-assertion of asynchronous reset to the design's clock domain.               
 
    Developer    : Mitu Raj, chip@chipmunklogic.com at Chipmunk Logic ™, https://chipmunklogic.com
-   Notes        : -
+   Notes        : Attribute ASYNC_REG used to PAR the flops together in Xilinx FPGAs.
    License      : Open-source.
    Date         : Aug-17-2022
 ===============================================================================================================================*/
