@@ -43,7 +43,7 @@ always @(posedge clk or negedge `RESET) begin
 
 end
 
-// Synchronized signal
+// Synchronized reset
 assign o_rst_sync = sync_ff [STAGES-1] ;
 
 endmodule
