@@ -1,10 +1,14 @@
 # reset_and_cdc_synchronizer
--- Reset Synchronizer synchronizes the de-assertion of asynchronous reset to the design's clock domain.
+-- Async Reset Synchronizer synchronizes the de-assertion of asynchronous reset to the design's clock domain.
+
+-- Reset Synchronizer synchronizes the assertion and de-assertion of asynchronous reset and generates a fully synchronous reset to the design's clock domain.
 
 -- CDC Synchronizer synchronizes 1-bit signal from source clock domain safely to destination clock domain.
 
 Source codes included
 ---------------------
+-- Async Reset Synchronizer
+
 -- Reset Synchronizer
 
 -- CDC Synchronizer
