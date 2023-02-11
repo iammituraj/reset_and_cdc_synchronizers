@@ -26,13 +26,14 @@ module areset_sync #(
    output logic o_rst_sync           // Asynchronous Reset with de-assertion synchronized
 ) ;
 
-`define RESET (i_rst_async ^ RST_POL)
+logic reset ;
+assign reset = i_rst_async ^ RST_POL ;
 
 (* ASYNC_REG = "TRUE" *)
-logic [STAGES-1: 0] sync_ff ;
+logic [STAGES-1:0] sync_ff ;
 
 // Synchronizing logic
-always @(posedge clk or negedge `RESET) begin
+always @(posedge clk or negedge reset) begin
    
    if (!`RESET) begin
       sync_ff <= STAGES'(RST_POL) ;
