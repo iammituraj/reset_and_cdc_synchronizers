@@ -35,8 +35,8 @@ logic [STAGES-1:0] sync_ff ;
 // Synchronizing logic
 always @(posedge clk or negedge reset) begin
    
-   if (!`RESET) begin
-      sync_ff <= STAGES'(RST_POL) ;
+   if (!reset) begin
+      sync_ff <= {STAGES{RST_POL}} ;
    end
    else begin
       sync_ff <= {sync_ff [STAGES-2 : 0], ~RST_POL} ;     
