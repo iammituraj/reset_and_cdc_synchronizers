@@ -1,4 +1,4 @@
-# reset_and_cdc_synchronizer
+# reset_and_cdc_synchronizers
 -- Async Reset Synchronizer synchronizes the de-assertion of asynchronous reset to the design's clock domain.
 
 -- Reset Synchronizer synchronizes asynchronous reset and generates a fully synchronous reset to the design's clock domain.
