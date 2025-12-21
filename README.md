@@ -1,17 +1,25 @@
 # reset_and_cdc_synchronizers
--- Async Reset Synchronizer synchronizes the de-assertion of asynchronous reset to the design's clock domain.
+## 1. Async Reset Synchronizer 
+Synchronizes the de-assertion of asynchronous reset to the design's clock domain.
 
--- Reset Synchronizer synchronizes asynchronous reset and generates a fully synchronous reset to the design's clock domain.
+Source file: [areset_sync.sv](areset_sync.sv)
 
--- CDC Synchronizer synchronizes 1-bit signal from source clock domain safely to destination clock domain.
+## 2. Reset Synchronizer 
+Synchronizes both the assertion & de-assertion of an asynchronous reset and generates a fully synchronous reset to the design's clock domain.
+This suitable for FPGA designs.
 
-Source codes included
----------------------
--- Async Reset Synchronizer
+Source file: [reset_sync.sv](reset_sync.sv)
 
--- Reset Synchronizer
+## 3. CDC Synchronizer 
+Synchronizes 1-bit signal from source clock domain safely to destination clock domain.
 
--- CDC Synchronizer
+Source files: 
+
+[cdc_sync.sv](cdc_sync.sv) -- without reset
+
+[cdc_sync_with_sync.sv](cdc_sync_with_clr.sv) -- with async reset
+
+[cdc_sync_with_rst.sv](cdc_sync_with_rst.sv) -- with fully sync reset (suitable for FPGAs)
 
 Comments
 --------
